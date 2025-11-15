@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Live Below Water</title>
-        <link rel="stylesheet" href="stylesfeedback.css">
+        <link rel="stylesheet" href="stylesfeedback copy.css">
     </head>
 <body>
     <nav class="navbar">
             <div class="navbar__container">
-                <a href="seawonder.html" id="navbar__logo">Seawonder</a>
+                <a href="index.html" id="navbar__logo">Seawonder</a>
                 <div class="navbar__togglemenu" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -17,7 +17,7 @@
                 </div> 
                 <ul class="navbar__menu">
                     <li class="navbar__item">
-                        <a href="seawonder.html" class="navbar__links"> Home </a>
+                        <a href="index.html" class="navbar__links"> Home </a>
                     </li>
                     <li class="navbar__item">
                         <a href="animals.html" class="navbar__links"> Animals </a>
@@ -33,14 +33,39 @@
         </nav>
      <script src="app.js"></script>
     
-     <div class="mainheader">
-     <h2>Feedback</h2>
-     </div>
 
-    <form action="mailto:haorentan7@outlook.com" method="post" target="_blank">
-        <textarea name="komen" id="komen"></textarea>
-        <p>
-        <input type="submit" value="Hantar">
+<div class="page-content">
+    <div class="feedback-container">
+    <h2>Feedback Form</h2>
+    <!-- Use Formspree endpoint -->
+    <form action="https://formspree.io/f/xdkykwvj" method="POST">
+      
+      <!-- Name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Rating -->
+      <label for="rating">Rate Us:</label>
+      <select id="rating" name="rating" required>
+        <option value="">--Select--</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+      </select>
+
+      <!-- Comments -->
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback here..."></textarea>
+
+      <!-- Submit -->
+      <button type="submit">Submit Feedback</button>
     </form>
+  </div>
+</div>
 </body>
 </html>
