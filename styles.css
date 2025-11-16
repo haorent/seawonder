@@ -5,106 +5,44 @@
     font-family: Impact, Helvetica', sans-serif;
 }
 
-.navbar{
-    background: #fff;
-    height: 80px;
+/* Existing Navbar Styles ... */
+
+/* Add/Update styles for aboutsection */
+.aboutsection {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto 0 auto; /* Center horizontally, add top margin */
+    background: #f6fff0;
+    border-radius: 20px;
+    box-shadow: 0 6px 32px rgba(30, 80, 60, 0.12), 0 1.5px 6px #8ecda3a5;
+    padding: 32px 28px 32px 28px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+    flex-direction: column;
+    align-items: center; /* Center all content vertically */
+    text-align: center;  /* Center text */
 }
 
-.navbar__container{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
+.aboutsection h2, .aboutsection h3 {
+    margin-bottom: 18px;
+    color: #204e3a;
+    font-weight: 400;
+}
+
+.aboutsection__img {
+    margin-top: 28px;
     width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
+    max-width: 420px;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(30, 80, 60, 0.12);
+    object-fit: cover;
 }
 
-#navbar__logo {
-    background-color: #66fb02;
-    background-image:linear-gradient(to top, #86e50bc7 0%, #c5e414f8 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-.fa-gem {
-    margin-right: 0.5rem; 
-}
-
-.navbar__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-}
-
-.navbar__item {
-    height: 80px;
-}
-
-.navbar__links {
-    color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
-}
-
-.navbar__links:hover {
-    color: #6bee43;
-    transition: all 0.3s ease;
-}
-
-
-
-@media screen {
-    .navbar__container{
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        padding: 0;
+@media (max-width: 600px) {
+    .aboutsection {
+        padding: 14px 6vw;
+        max-width: 98vw;
     }
-
+    .aboutsection__img {
+        max-width: 98vw;
     }
-
-    #navbar__logo {
-        padding-left: 25px;
-    }
-    .navbar__toggle .bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background:#000;
-    }
-
-    .navbar__item {
-        width: 100%;
-    }
-
-    .navbar__links {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
+}
