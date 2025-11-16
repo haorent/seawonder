@@ -5,15 +5,6 @@
     font-family: Impact, Helvetica', sans-serif;
 }
 
-/* Sea themed background for body */
-body {
-    background-image: url('sea-bg.jpg'); /* use your own image filename */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 100vh;
-}
-
 .navbar{
     background: #fff;
     height: 80px;
@@ -84,66 +75,64 @@ body {
 
 .plantslist {
     text-align: center;
-    width: auto;
-    padding-top: 50px; /* Add headspace to whole block */
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
 }
 
-.plantslist img {
-    margin-top: 40px;  /* Headspace above each image */
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,50,0.15);
-}
-
-.plantslist h1 {
-    margin-top: 32px;  /* Headspace above each heading */
-    color: #036c57;
-    text-shadow: 0 2px 8px rgba(0,0,40,0.15);
-}
-
-.plantslist p {
-    margin-top: 16px; /* Headspace above each description */
-    margin-bottom: 28px;
-    color: #03435c;
-    background: rgba(255,255,255,0.6);
-    display: inline-block;
-    padding: 10px 18px;
-    border-radius: 8px;
-}
-
-.plants__menu {
-    margin-bottom: 60px; /* Separation between plant blocks */
-}
-
-@media screen {
-    .navbar__container{
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        padding: 0;
-    }
-
-}
-
-#navbar__logo {
-    padding-left: 25px;
-}
-.navbar__toggle .bar {
-    width: 22px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background:#000;
-}
-
-.navbar__item {
-    width: 100%;
-}
-
-.navbar__links {
+.plantbox {
+    background: #f6fff0;
+    border-radius: 20px;
+    box-shadow: 0 6px 32px rgba(30, 80, 60, 0.12), 0 1.5px 6px #8ecda3a5;
+    border: 2px solid #cddae9;
+    max-width: 350px;
+    padding: 26px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 2rem;
+}
+
+.plantbox__img {
     width: 100%;
-    display: table;
+    max-width: 300px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(30, 80, 60, 0.09);
+}
+
+.plantbox h1 {
+    font-size: 1.55rem;
+    margin-bottom: 12px;
+    color: #204e3a;
+}
+
+.plantbox p {
+    font-size: 1.08rem;
+    margin-bottom: 16px;
+    color: #308088;
+}
+
+.plantbox a {
+    color: #207349;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+@media (max-width:800px) {
+   .plantslist {
+        flex-direction: column;
+        gap: 22px;
+        align-items: center;
+    }
+    .plantbox {
+        max-width: 95vw;
+    }
+    .plantbox__img {
+        max-width: 95vw;
+        height: auto;
+    }
 }
