@@ -73,7 +73,50 @@
     transition: all 0.3s ease;
 }
 
+.seagrassbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #f6fff0;
+    border-radius: 20px;
+    box-shadow: 0 6px 32px rgba(30,80,60,0.12), 0 1.5px 6px #8ecda3a5;
+    border: 2px solid #cddae9;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 32px 28px;
+    gap: 38px;
+}
 
+.seagrassinfo {
+    flex: 2;
+    text-align: left;
+}
+
+.seagrassinfo h1, .seagrassinfo h2, .seagrassinfo h3 {
+    color: #204e3a;
+}
+
+.seagrassinfo p {
+    color: #308088;
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+.seagrasspicture {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.seagrasspicture img {
+    width: 300px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(30,80,60,0.10);
+}
 
 @media screen {
     .navbar__container{
@@ -83,8 +126,6 @@
         z-index: 1;
         width: 100%;
         padding: 0;
-    }
-
     }
 
     #navbar__logo {
@@ -112,4 +153,19 @@
     .seagrasspicture {
         text-align: center;
         padding: 1rem;
+    }
+
+    .seagrassbox {
+        flex-direction: column;
+        align-items: center;
+        padding: 11px 5vw;
+    }
+    .seagrasspicture img {
+        width: 92vw;
+        max-width: 350px;
+        height: auto;
+        margin-top: 18px;
+    }
+    .seagrassinfo {
+        text-align: center;
     }
