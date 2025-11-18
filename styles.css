@@ -161,8 +161,7 @@
         display: block;
         color: #000;
     }
-
-    /* Hamburger animated state */
+    
     .navbar__togglemenu.is-active .bar:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
     }
