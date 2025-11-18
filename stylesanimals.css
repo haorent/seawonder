@@ -83,7 +83,6 @@
     justify-content: center;
 }
 
-/* Box for each animal */
 .animalbox {
     background: #f6fff0;
     border-radius: 20px;
@@ -156,7 +155,6 @@
         transition: transform 0.25s ease, opacity 0.25s ease;
     }
 
-    /* Default: hide the full menu on small screens */
     .navbar__menu {
         display: none;
         position: absolute;
@@ -185,8 +183,7 @@
         display: block;
         color: #000;
     }
-
-    /* Hamburger animated state */
+    
     .navbar__togglemenu.is-active .bar:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
     }
