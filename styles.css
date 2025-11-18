@@ -116,7 +116,6 @@
         padding-left: 0;
     }
 
-    /* Show the hamburger on small screens */
     .navbar__togglemenu {
         display: flex;
         flex-direction: column;
@@ -134,7 +133,6 @@
         transition: transform 0.25s ease, opacity 0.25s ease;
     }
 
-    /* Default: hide the full menu on small screens */
     .navbar__menu {
         display: none;
         position: absolute;
